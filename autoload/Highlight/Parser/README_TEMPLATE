@@ -1,0 +1,16 @@
+
+"template
+
+function! SearchAndHighlightMyfile()
+
+	let l:exp = "let \@ = \'"	
+
+  "add regex match
+  let l:exp .=""
+
+	let l:exp .= "\'"
+
+  execute l:exp
+
+endfunction
+
