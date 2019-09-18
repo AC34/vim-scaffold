@@ -1,98 +1,116 @@
-"
 
 "exit on 0
 if g:scaffold_autofold_enable == 0 | finish | endif
 
+"global accessible functions
 function! Fold#AutoFold#Init()
- call s:Debug("AutoFold init:")
+ call s:Debug("AutoFold Init:")
 
  "this only needs to be checked once
- if ! exists("g:auto_highlight_executed")
+ if !exists("g:auto_highlight_executed")
    call Highlight#AutoHighlight#Init() 
  endif
  
- let g:hl_list = s:ParseList()
- 
- "these needs to be set
- set foldmethod=expr
- set foldexpr=Fold#AutoFold#Fold()
- set foldlevelstart=0
+ "save current settings
+ let l:foldmethod = &foldmethod
+ let l:foldlevelstart = &foldlevelstart
+ let l:modifiable = &modifiable 
+
+ "update current settings 
+ set foldmethod=manual
+ set foldlevelstart=1 
+ set modifiable
+
+ "call folding function
+ call Fold#AutoFold#Fold()
+
+ "restore last settings
+ execute "set foldmethod=".l:foldmethod
+ execute "set foldlevelstart=".l:foldlevelstart
+ if l:modifiable ==# 1 | set modifiable | endif
 	
  let g:scaffold_autofold_executed = 0
 endfunction
 
+
 function! Fold#AutoFold#Fold()
-	call s:Debug("Fold#AutoFold#Fold:")
-	"indent number
-  let l:in = 1 "default
+  call s:Debug("Fold#AutoFold#Fold:")
 
-  "leave first line unfoleded for esthetic reason
-	if v:lnum ==# 1 | let l:in = 0 | endif
+	"unfold everything first
+	silent! norm zR
 
-  let l:max = len(g:hl_list) 
-	let l:count = 1
+  "abort on no search result
+	silent! execute("redir => l:jumplist | jumps | redir end")
+	if len(split(l:jumplist,"\n")) ==# 0 | return 0 | endif
 
-	call s:Debug("l:vnum=".v:lnum)
+	"get last line number
+	silent! norm G
+	let l:last_line = line(".")
+	if l:last_line ==# 1 | return 0 | endif "file has only one line
 
-	while l:count < l:max
+  "back to start position
+	silent! norm gg 
+	let l:pos = line(".") "starting from 1
+	let l:next = l:pos "next jump position
+	let l:continue = 1 "0,1 as boolean 
 
-		let l:previous = g:hl_list[l:count-1]
-		let l:current = g:hl_list[l:count]
+	"continue while l:continue is on
+  while l:continue ==# 1
+		"go to next highlight(or first)
+		silent! norm n 
+		let l:pos = line(".") "remember current position
 
-		"unfold if current line is part of search result
-		if l:current ==# v:lnum
-			let l:in = 0
+		"go to next highlight
+		silent! norm n 
+		"update next line
+		let l:next = line(".")
+		"go back to current line
+		silent! norm N 
 
-			let l:count = l:max
+		"there is only one hump for jump
+		if l:next ==# l:pos | let l:continue = 0 | break | endif
+
+		if l:next < l:pos
+			"next hump is younger number
+			"fold by the last hump(if current line isn't the last line)
+			if l:pos ==# l:last_line | let l:continue = 0 | break | endif
+			silent! norm j
+			silent! norm V
+			silent! norm G
+			silent! norm zf
+			let l:continue = 0
+			"end the loop
+			break
 		endif
 
-		let l:count += 1
+		"the next hump is the next line, thus continuous humps
+		if l:pos+1 ==# l:next | continue | endif
 
+		"from here is the manual folding
+		"go to the next line
+		silent! norm j 
+		"start visual mode(line)
+    silent! norm V		
+		"jump to right before next highlight position
+		silent! norm n
+		silent! norm k
+		"fold selected lines
+		silent! norm zf	
+		"go back to the current postion	
+		silent! norm N 
 	endwhile
 
-	call s:Debug("setting line".v:lnum."to level ".l:in)
+	"back to first jump
+	silent! norm gg
+	silent! norm n
 
-	return l:in
 endfunction
 
-
-"parses the jumps searched list and comes up with a list of number of lines to be
-"highlighted
-"returns the list(sorted)
-function! s:ParseList()
-	call s:Debug("ParseList:")
-
-	execute("redir => l:jumplist | jumps | redir END")
-
-	let l:jumplist = split(l:jumplist,"\n")
-	call s:Debug("jumplist length=".len(l:jumplist))
-
-	let l:hl_lines = []
- 
-	"add line numbers for jumping
-	for line in l:jumplist
-		let l:ln = str2nr(get(split(line),1,"0"))
-		if l:ln > 0
-	    call add(l:hl_lines, l:ln)
-		endif
-	endfor
-
-	"sort from small numbers 
-	call sort(l:hl_lines,'n')
-
-  for s in l:hl_lines
-    call s:Debug("l:hl_lines =".s)
-	endfor
-
-  return l:hl_lines
-endfunction
-
-function! s:Debug(message)
+"local access only functions
 "only works when in debug mode function! s:Debug(message)
-  "only echo when debugging mode
+function! s:Debug(message)
   if g:scaffold_autofold_enable ==# 2
 		set cmdheight=4
     echom a:message
 	endif
 endfunction
-

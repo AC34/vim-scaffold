@@ -10,11 +10,11 @@ function! Highlight#AutoHighlight#Init()
   "Parse File and obtain the list of lines of matches
 	"this already highlights files
 	call s:ParseFile()
-
   
   let g:scaffold_autohighlight_executed = 1
-endfunction
 
+  set hls
+endfunction
 
 "Chooses and uses parser which suits for current file(by file attribute)
 function! s:ParseFile()
@@ -59,16 +59,11 @@ function! s:ParseFile()
 
 endfunction
 
-
-
-
 "only works when in debug mode
 function! s:Debug(message)
-
   "only echo when debugging mode
   if g:scaffold_autohi_enable ==# 2
 		set cmdheight=4
     echom a:message
 	endif
-
 endfunction
