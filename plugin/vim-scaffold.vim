@@ -27,24 +27,6 @@ if !exists('g:scaffold_autohi_enable')| let g:scaffold_autohi_enable = 1 | endif
 "Leader+h to call :set hls
 if !exists("g:scaffold_leaderhighlight_enable") | let g:scaffold_leaderhighlight_enable = 1 | endif
 
-"auto folding setting
-"0 disabled
-"1 enabled(default)
-"2 enabled for debugging purpose
-if !exists('g:scaffold_autofold_enable') | let g:scaffold_autofold_enable = 1 | endif
-
-"jump override for folds
-"0 disabled
-"1 enabled(default)
-"2 enabled for debugging purpose
-if ! exists("g:scaffold_override_Jumps") | let g:scaffold_overridejumps_enable = 1 | endif
-
-"unfold by l, fold by Ctrl+h
-"0 disabled
-"1 enabled(default)
-"2 enabled for debugging purpose
-if ! exists("g:scaffold_hlfold_enable") | let g:scaffold_horopen_enable = 1 | endif
-
 "performing each features
 "autoindent
 au BufCreate * call Indent#AutoIndentCount#Init()
@@ -52,6 +34,3 @@ au BufCreate * call Indent#AutoIndentCount#Init()
 "auto highlight
 au BufCreate * call Highlight#AutoHighlight#Init()
 au BufCreate * call Highlight#HighlightMap#LeaderHighlight()
-"auto fold
-au BufRead * call Fold#AutoFold#Init() 
-au BufEnter * call Fold#FoldJumps#OverrideJumps() | call Fold#FoldJumps#ShowColumn()
