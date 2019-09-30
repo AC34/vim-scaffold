@@ -7,19 +7,16 @@ if !exists('g:scaffold_mode') | let g:scaffold_mode = 1 | endif
 "exit on 0
 if g:scaffold_mode == 0 | finish | endif
 
-
 "load autoindentation setting
 "0 disabled
 "1 enabled(default)
 "2 enabled for debugging purpose
 if !exists('g:scaffold_autoindent_enable') | let g:scaffold_autoindent_enable = 1  | endif
 
-
 "max line number of counting indent information
 "defaults to 1000(as in not to let it read too long lines)
 "too short lines will result in poor detection quality
 if !exists('g:scaffold_autoindent_maxcount') | let g:scaffold_autoindent_maxcount = 1000 | endif
-
 
 "load auto highlight setting
 "0 disabled
@@ -49,14 +46,12 @@ if ! exists("g:scaffold_override_Jumps") | let g:scaffold_overridejumps_enable =
 if ! exists("g:scaffold_hlfold_enable") | let g:scaffold_horopen_enable = 1 | endif
 
 "performing each features
-
 "autoindent
-au BufEnter * call Indent#AutoIndentCount#Init()
+au BufCreate * call Indent#AutoIndentCount#Init()
 
 "auto highlight
-au BufEnter * call Highlight#AutoHighlight#Init() | call Highlight#HighlightMap#LeaderHighlight()
-
+au BufCreate * call Highlight#AutoHighlight#Init()
+au BufCreate * call Highlight#HighlightMap#LeaderHighlight()
 "auto fold
-au BufEnter * call Fold#AutoFold#Init() | call Fold#FoldJumps#OverrideJumps() | call Fold#FoldJumps#EnableHlfold()
-
-
+au BufRead * call Fold#AutoFold#Init() 
+au BufEnter * call Fold#FoldJumps#OverrideJumps() | call Fold#FoldJumps#ShowColumn()

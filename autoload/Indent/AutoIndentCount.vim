@@ -3,7 +3,6 @@
 "exit on 0
 if g:scaffold_autoindent_enable ==# 0 | finish | endif
 
-
 "interface from other classs to here
 function! Indent#AutoIndentCount#Init()
 	call s:Debug("Auto Indent:")	
@@ -28,7 +27,7 @@ function! Indent#AutoIndentCount#Init()
 	if s:hightest_spc_score !=# 0
 		call s:Debug("updating settings by:".s:hightest_spc_score)
 		set shiftwidth=0 "with 0 follows tabstop
-		set softtabstop=-1 "followss shiftwidth
+		set softtabstop=-1 "follows shiftwidth
 
 		"update tabstop
 		execute "set tabstop=".s:hightest_spc_score

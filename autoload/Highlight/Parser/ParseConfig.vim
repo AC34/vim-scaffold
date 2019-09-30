@@ -1,5 +1,5 @@
 
-"Config
+".config
 
 function! Highlight#Parser#ParseConfig#Parse()
 

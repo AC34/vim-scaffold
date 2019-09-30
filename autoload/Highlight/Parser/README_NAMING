@@ -1,26 +1,20 @@
 
-
 About this directory(Parser/)
  This folder contains Parser Scripts.
-	Those script files are named under one simple rule.
+	Those script files are named under following rules.
 	Rule:
 	 1.Starts with prefix "Parse"
 		2.Ends with suffix ".vim"
-		4.Sandwiched with prefix and suffi, full name of the file without dot, with its first letter in capital and others lowered can be used.
-		  target.attr -> ParseTargetattr.vim
-		3.Sandwiched with prefix and suffix, filetype attribute starting with capital leter without dot can be used.
-		  target.attr -> ParseAttr.vim
+		3.Sandwiched with prefix and suffix, full name of the file without dot, with its first letter in capital and others lowered can be used.
+		  e.g.target.attr -> ParseTargetattr.vim
+		4.Sandwiched with prefix and suffix, filetype attribute starting with capital leter without dot can be used.
+		  target.attr -> ParseAttr.vim(ParsetargetAttr.vim will be prioritized)
  
-Exceptions:
- There is an exception for this naming rule.
-	When no script was found to target the file, ParseGeneral.vim will be used.
-
 Priority:
   Calling parse scripts are prioritized.
 		Script will only be executed once.
-		In the list, scripts matche
+		Following is the procedural list.
 		1.Full name match
 		2.file type attribute match
-		3.General otherwise
+		3.No match, nothing happens
 
-  

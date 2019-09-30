@@ -32,7 +32,6 @@ function! Fold#AutoFold#Init()
  let g:scaffold_autofold_executed = 0
 endfunction
 
-
 function! Fold#AutoFold#Fold()
   call s:Debug("Fold#AutoFold#Fold:")
 
@@ -84,6 +83,7 @@ function! Fold#AutoFold#Fold()
 		endif
 
 		"the next hump is the next line, thus continuous humps
+		"avoiding this hump to start folding by next line.
 		if l:pos+1 ==# l:next | continue | endif
 
 		"from here is the manual folding
@@ -94,15 +94,57 @@ function! Fold#AutoFold#Fold()
 		"jump to right before next highlight position
 		silent! norm n
 		silent! norm k
-		"fold selected lines
-		silent! norm zf	
-		"go back to the current postion	
-		silent! norm N 
+
+		"if selected lines are empty lines, they should be detected here.
+		if s:IsSelectedMeaningful(l:pos, l:next-1)
+		  "fold selected lines
+		  silent! norm zf	
+		  "go back to the current postion	
+		  silent! norm N 
+		endif
+
 	endwhile
 
 	"back to first jump
 	silent! norm gg
 	silent! norm n
+
+endfunction
+
+"-1 when meaninigless to fold
+function! s:IsSelectedMeaningful(start, end)
+
+  "get the selected line  
+  let l:text = ""
+  let l:count = a:start
+	let l:max = a:end > a:start ? a:end : return -1
+
+	call s:Debug("start=".a:start." max=".l:max)	
+
+  "concat lines once
+	while l:count <= l:max
+    let l:text .= getline(l:count)
+    let l:count += 1 
+	endwhile
+
+	call s:Debug("l:text concatenated. =".l:text)
+
+	"subsittute all lf and spaces
+	let l:text = substitute(l:text,"\n*","","")
+	let l:text = substitute(l:text,"/s*","","")
+	let l:text = substitute(l:text,"/t*","","")
+	
+	call s:Debug("l:text substituted =".l:text)
+
+  "shortest meaningful sentences are "I do" and "I am"	
+	"those are often too short to be relevant comments.
+	"For reference, setting 3 letters minimum can serve
+	"this function's purpose.
+  if strlen(l:text) >= 3
+		return 1
+	else
+		return -1
+	endif
 
 endfunction
 
@@ -114,3 +156,4 @@ function! s:Debug(message)
     echom a:message
 	endif
 endfunction
+

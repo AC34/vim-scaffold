@@ -1,5 +1,5 @@
 
-"vim file
+".vim file
 
 function! Highlight#Parser#ParseBashrc#Parse()
 

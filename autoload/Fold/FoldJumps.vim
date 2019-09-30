@@ -1,8 +1,9 @@
 
 "toggle fold
-"overrides n,N to zj,zk when there are available jumps
+"overrides Tab-n,Shift-Tab to zj,zk when there are available jumps
 "when there are no folding poitns, then does nothing
 function! Fold#FoldJumps#OverrideJumps()
+
   "load setting
 	if g:scaffold_overridejumps_enable ==# 0 | finish | endif
 
@@ -10,25 +11,17 @@ function! Fold#FoldJumps#OverrideJumps()
   silent! execute("redir => l:jumplist | jumps | redir end")
 	if len(split(l:jumplist,"\n")) > 0 
 		call s:Debug("remapping n and N")
-
-		"override n,N mapping
-		nnoremap n zj
-		nnoremap N zk
+		"mapping
+		nnoremap <Tab> zj
+		nnoremap <S-Tab> zk
 	endif
-
 endfunction
 
-"enables foldopen by l
-function! Fold#FoldJumps#EnableHlfold()
-  call s:Debug("Fold#FoldJumps#EnableLUnfold:")
-
-  if g:scaffold_hlfold_enable ==# 0 | finish | endif
-
-  call s:Debug("enabling unfolding by l")
-
-	"set foldopen=hor
-	nnoremap l :silent! foldopen<CR>l
-  nnoremap <C-h> :foldclose<CR><C-h>
+"setting column to 1
+function! Fold#FoldJumps#ShowColumn()
+  if g:scaffold_showcolumn_enable ==# 1
+		set foldcolumn=1
+	endif
 endfunction
 
 "debug
@@ -38,6 +31,5 @@ function! s:Debug(message)
     echom a:message
 	endif
 endfunction
-
 
 

@@ -13,7 +13,6 @@ function! Highlight#AutoHighlight#Init()
   
   let g:scaffold_autohighlight_executed = 1
 
-  set hls
 endfunction
 
 "Chooses and uses parser which suits for current file(by file attribute)
@@ -51,12 +50,7 @@ function! s:ParseFile()
 		endtry
 	endif
 
-	"last try is to parse it as text
-  let l:target = "General"
-	execute "call Highlight#Parser#Parse".l:target."#Parse()"
-	call s:Debug("executed Highlight#Parser#Parse".l:target."#Parse()")
 	return
-
 endfunction
 
 "only works when in debug mode
