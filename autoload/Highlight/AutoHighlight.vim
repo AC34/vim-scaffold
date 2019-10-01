@@ -1,11 +1,12 @@
 
-
+echo "Auto Hgihlight start of the script."
 "exit on 0
 if g:scaffold_autohi_enable ==# 0 | finish | endif
 
 function! Highlight#AutoHighlight#Init()
 
   call s:Debug("Auto Highlight:")
+	echom "Auto Higihlight init"
    
   "Parse File and obtain the list of lines of matches
 	"this already highlights files
@@ -37,12 +38,15 @@ function! s:ParseFile()
 	endtry
 
 	"create parse script name by dot
+	call s:Debug("full name process failed. l:dot=".l:dot)
 	if l:dot > -1
+		call s:Debug("trying by file attribute.")
 		try
 		"create parse script name with making first letter capital
   	  let l:attr_name = l:file_name[l:dot:strlen(l:file_name)]
   	  let l:attr_name = toupper(l:attr_name[0:0]).tolower(l:attr_name[1:strlen(l:file_name)])
 		  let l:target = l:attr_name
+			call s:Debug("created parse name by attribute name. =".l:target)
 		  execute "call Highlight#Parser#Parse".l:target."#Parse()"
 		  call s:Debug("executed Highlight#Parser#Parse".l:target."#Parse()")
 		  return
@@ -61,3 +65,4 @@ function! s:Debug(message)
     echom a:message
 	endif
 endfunction
+

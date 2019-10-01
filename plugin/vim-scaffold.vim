@@ -1,11 +1,14 @@
-"load settngs for this plugin
+
+"check weather vim supports autocmd
+if has("autocmd") ==# 0 | finish | endif
+
 "load enabling setting
 "0 disabled
 "1 enabled for usual purpose(default)
 "2 enabled for debugging purpose
 if !exists('g:scaffold_mode') | let g:scaffold_mode = 1 | endif
 "exit on 0
-if g:scaffold_mode == 0 | finish | endif
+if g:scaffold_mode ==# 0 | finish | endif
 
 "load autoindentation setting
 "0 disabled
@@ -27,6 +30,8 @@ if !exists('g:scaffold_autohi_enable')| let g:scaffold_autohi_enable = 1 | endif
 "Leader+h to call :set hls
 if !exists("g:scaffold_leaderhighlight_enable") | let g:scaffold_leaderhighlight_enable = 1 | endif
 
+if !exists("g:scaffold_autofoldcol_enable") |  let g:scaffold_autofoldcol_enable = 1 | endif
+
 "performing each features
 "autoindent
 au BufCreate * call Indent#AutoIndentCount#Init()
@@ -34,3 +39,7 @@ au BufCreate * call Indent#AutoIndentCount#Init()
 "auto highlight
 au BufCreate * call Highlight#AutoHighlight#Init()
 au BufCreate * call Highlight#HighlightMap#LeaderHighlight()
+
+au BufEnter * call Fold#AutoColumn#Init()
+
+

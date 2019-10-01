@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	//
 <Leader>h	autoload/Highlight/HighlightMap.vim	/^  nnoremap <Leader>h :set hls<CR>$/;"	m
+Fold#AutoColumn#Init	autoload/Fold/AutoColumn.vim	/^function! Fold#AutoColumn#Init()$/;"	f
 Highlight#AutoHighlight#Init	autoload/Highlight/AutoHighlight.vim	/^function! Highlight#AutoHighlight#Init()$/;"	f
 Highlight#HighlightMap#LeaderHighlight	autoload/Highlight/HighlightMap.vim	/^function! Highlight#HighlightMap#LeaderHighlight()$/;"	f
 Highlight#Parser#ParseBashrc#Parse	autoload/Highlight/Parser/ParseBashrc.vim	/^function! Highlight#Parser#ParseBashrc#Parse()$/;"	f
@@ -23,6 +24,8 @@ Indent#AutoIndentCount#Init	autoload/Indent/AutoIndentCount.vim	/^function! Inde
 g:scaffold_autohighlight_executed	autoload/Highlight/AutoHighlight.vim	/^  let g:scaffold_autohighlight_executed = 1$/;"	v
 g:scaffold_autoindent_executed	autoload/Indent/AutoIndentCount.vim	/^	let g:scaffold_autoindent_executed = 1$/;"	v
 s:CollectCharacteristics	autoload/Indent/AutoIndentCount.vim	/^function! s:CollectCharacteristics(lines)$/;"	f
+s:CountMaxFoldLevel	autoload/Fold/AutoColumn.vim	/^function! s:CountMaxFoldLevel()$/;"	f
+s:Debug	autoload/Fold/AutoColumn.vim	/^function! s:Debug(message)$/;"	f
 s:Debug	autoload/Highlight/AutoHighlight.vim	/^function! s:Debug(message)$/;"	f
 s:Debug	autoload/Indent/AutoIndentCount.vim	/^function! s:Debug(message)$/;"	f
 s:DetectIndentUnit	autoload/Indent/AutoIndentCount.vim	/^function! s:DetectIndentUnit(lines)$/;"	f
