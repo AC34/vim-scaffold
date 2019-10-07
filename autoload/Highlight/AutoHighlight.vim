@@ -1,19 +1,15 @@
 
-echo "Auto Hgihlight start of the script."
 "exit on 0
 if g:scaffold_autohi_enable ==# 0 | finish | endif
 
 function! Highlight#AutoHighlight#Init()
 
   call s:Debug("Auto Highlight:")
-	echom "Auto Higihlight init"
-   
   "Parse File and obtain the list of lines of matches
 	"this already highlights files
 	call s:ParseFile()
   
   let g:scaffold_autohighlight_executed = 1
-
 endfunction
 
 "Chooses and uses parser which suits for current file(by file attribute)

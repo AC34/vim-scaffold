@@ -7,6 +7,7 @@
 !_TAG_PROGRAM_VERSION	0.0.0	//
 <Leader>h	autoload/Highlight/HighlightMap.vim	/^  nnoremap <Leader>h :set hls<CR>$/;"	m
 Fold#AutoColumn#Init	autoload/Fold/AutoColumn.vim	/^function! Fold#AutoColumn#Init()$/;"	f
+General#GeneralSettings#Init	autoload/General/GeneralSettings.vim	/^function! General#GeneralSettings#Init()$/;"	f
 Highlight#AutoHighlight#Init	autoload/Highlight/AutoHighlight.vim	/^function! Highlight#AutoHighlight#Init()$/;"	f
 Highlight#HighlightMap#LeaderHighlight	autoload/Highlight/HighlightMap.vim	/^function! Highlight#HighlightMap#LeaderHighlight()$/;"	f
 Highlight#Parser#ParseBashrc#Parse	autoload/Highlight/Parser/ParseBashrc.vim	/^function! Highlight#Parser#ParseBashrc#Parse()$/;"	f
@@ -24,12 +25,16 @@ Indent#AutoIndentCount#Init	autoload/Indent/AutoIndentCount.vim	/^function! Inde
 g:scaffold_autohighlight_executed	autoload/Highlight/AutoHighlight.vim	/^  let g:scaffold_autohighlight_executed = 1$/;"	v
 g:scaffold_autoindent_executed	autoload/Indent/AutoIndentCount.vim	/^	let g:scaffold_autoindent_executed = 1$/;"	v
 s:CollectCharacteristics	autoload/Indent/AutoIndentCount.vim	/^function! s:CollectCharacteristics(lines)$/;"	f
+s:Configure	autoload/General/GeneralSettings.vim	/^function! s:Configure()$/;"	f
 s:CountMaxFoldLevel	autoload/Fold/AutoColumn.vim	/^function! s:CountMaxFoldLevel()$/;"	f
 s:Debug	autoload/Fold/AutoColumn.vim	/^function! s:Debug(message)$/;"	f
+s:Debug	autoload/General/GeneralSettings.vim	/^function! s:Debug(message)$/;"	f
 s:Debug	autoload/Highlight/AutoHighlight.vim	/^function! s:Debug(message)$/;"	f
 s:Debug	autoload/Indent/AutoIndentCount.vim	/^function! s:Debug(message)$/;"	f
 s:DetectIndentUnit	autoload/Indent/AutoIndentCount.vim	/^function! s:DetectIndentUnit(lines)$/;"	f
 s:DetectSpacesUnit	autoload/Indent/AutoIndentCount.vim	/^function! s:DetectSpacesUnit(lines)$/;"	f
+s:LoadAdditionalPresets	autoload/General/GeneralSettings.vim	/^function! s:LoadAdditionalPresets()$/;"	f
+s:LoadGeneralPresets	autoload/General/GeneralSettings.vim	/^function! s:LoadGeneralPresets()$/;"	f
 s:LoadLines	autoload/Indent/AutoIndentCount.vim	/^function! s:LoadLines(file_lines)$/;"	f
 s:ParseDebianSourcesList	autoload/Highlight/Parser/ParseList.vim	/^function! s:ParseDebianSourcesList()$/;"	f
 s:ParseFile	autoload/Highlight/AutoHighlight.vim	/^function! s:ParseFile()$/;"	f
