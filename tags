@@ -24,8 +24,8 @@ Indent#AutoIndentCount#Detected	autoload/Indent/AutoIndentCount.vim	/^function! 
 Indent#AutoIndentCount#Init	autoload/Indent/AutoIndentCount.vim	/^function! Indent#AutoIndentCount#Init()$/;"	f
 g:scaffold_autohighlight_executed	autoload/Highlight/AutoHighlight.vim	/^  let g:scaffold_autohighlight_executed = 1$/;"	v
 g:scaffold_autoindent_executed	autoload/Indent/AutoIndentCount.vim	/^	let g:scaffold_autoindent_executed = 1$/;"	v
+s:ApplySettings	autoload/General/GeneralSettings.vim	/^function! s:ApplySettings()$/;"	f
 s:CollectCharacteristics	autoload/Indent/AutoIndentCount.vim	/^function! s:CollectCharacteristics(lines)$/;"	f
-s:Configure	autoload/General/GeneralSettings.vim	/^function! s:Configure()$/;"	f
 s:CountMaxFoldLevel	autoload/Fold/AutoColumn.vim	/^function! s:CountMaxFoldLevel()$/;"	f
 s:Debug	autoload/Fold/AutoColumn.vim	/^function! s:Debug(message)$/;"	f
 s:Debug	autoload/General/GeneralSettings.vim	/^function! s:Debug(message)$/;"	f

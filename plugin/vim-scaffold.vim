@@ -34,10 +34,10 @@ if !exists("g:scaffold_leaderhighlight_enable") | let g:scaffold_leaderhighlight
 
 if !exists("g:scaffold_autofoldcol_enable") |  let g:scaffold_autofoldcol_enable = 1 | endif
 
-"performing each features
 
+"performing each features
 "preload general settings
-au BufCreate * call General#GeneralSettings#Init()
+au VimEnter * call General#GeneralSettings#Init()
 
 "autoindent
 au BufCreate * call Indent#AutoIndentCount#Init()
