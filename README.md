@@ -63,6 +63,8 @@ Configuration
 #### Settings that go well with this plugin
 There are some settings that go well with this plugin.
 ##### 1 Setting highlight colors
+You want to set colors for highlighting.
+For command line vim, example might be as follows:
   `au BufEnter * execute "hi search ctermfg=179 ctermbg=NONE"
     \|  execute "hi Folded ctermfg=179 ctermbg=Black"`
 ##### 2 You might want to set Leader key
