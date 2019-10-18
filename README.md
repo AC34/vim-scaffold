@@ -27,7 +27,7 @@ This is extractions of common settings and trivial functionalities from my .vimr
 By using this plugin, you'll benefit from shortening your .vimrc file, or and you 'll be given some trivial functionalities.  
 Currently implemented functionalities and settings are as follows:  
 
--*** Functionalities
+#-*** Functionalities
   - Automatic indentation detection
   - Automatic highglight of some trivial files when they open
   - Automatic Folding
