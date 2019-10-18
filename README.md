@@ -29,7 +29,8 @@ Installation
 ---------------------------------------------
 add below line to your .vimrc file when you're using vim-plug(for other plugins, follow your plugin's tutorial).
 
-*****Plug 'AC34/vim-scaffold'**
+#### [vim-plug](https://github.com/junegunn/vim-plug)
+	***Plug 'AC34/vim-scaffold'
 
 Author
 ---------------------------------------------
