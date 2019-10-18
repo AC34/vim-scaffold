@@ -115,4 +115,6 @@ read LICENSE file.
 
 Notes
 ---------------------------------------------
+This plugin is developed on vim-gtk(debian).
+might not work well with other kind of vims.
 
