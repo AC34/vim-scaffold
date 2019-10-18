@@ -36,7 +36,9 @@ Currently implemented functionalities and settings are as follows:
     - automatic highglight of some trivial files when they open
     - key mapping of &lt;Leader&gt;h for highlihgt search
   - folding
-    - automatic folding level adjustment
+    - automatic folding level(columns) adjustment
+	- indenting
+	  - automatic tabstop update
 
 - Settings(enabled)(only if supported)
   - incremental search
