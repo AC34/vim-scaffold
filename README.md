@@ -67,19 +67,18 @@ disables autoindent functionality
 
 sets max line numbers to use for analyzing indentation(to 500 lines in example below)  
 
-	"let g:scaffold_autoindent_maxcount = 500"
-
+	`let g:scaffold_autoindent_maxcount = 500`
 disables auto highlight  
-	let g:scaffold_autohi_enable = 0
+	`let g:scaffold_autohi_enable = 0`
 
 disables highlight by &lt;Leader&gt;h  
-	let g:scaffold_leaderhighlight_enable = 1
+	`let g:scaffold_leaderhighlight_enable = 1`
 	
 
-let g:scaffold_leaderhighlight_enable = 0
+	`let g:scaffold_leaderhighlight_enable = 0`
 
 disables auto foldlevel(columns) settings
-	let g:scaffold_autofoldcol_enable = 1
+	`let g:scaffold_autofoldcol_enable = 1`
 
 Author
 ---------------------------------------------
