@@ -31,12 +31,12 @@ This is extractions of common settings and trivial functionalities from my .vimr
 By using this plugin, you'll benefit from shortening your .vimrc file and/or you 'll be given some trivial functionalities.  
 Currently implemented functionalities and settings are as follows:  
 - Functionalities
-  - automatic indentation detection
-  - automatic highglight of some trivial files when they open
+  - searching
+    - automatic indentation detection
+    - automatic highglight of some trivial files when they open
     - key mapping of &lt;Leader&gt;h for highlihgt search
-  - automatic folding level setting
-    - key mapping for folding/unfolding with &lt;Shift&gt;h and &lt;Shift&gt;l
-    - jumps between folded lines by Tab and &lt;Shift&gt;Tab
+  - folding
+    - automatic folding level adjustment
 
 - Settings(enabled)(only if supported)
   - incremental search
@@ -72,9 +72,17 @@ For command line vim, example might be as follows:
 ##### 2 You might want to set Leader key
 For toggling highlight on search by &lt;Leader&gt;
 ##### 3 Install syntax plugins
-Syntax rules are needed for auto folding.
+Syntax rules are needed for folding.
+##### 4 Keymaps for jumping between folded lines
+Tabs can be convenient:
+	`nnoremap &lt;Tab&gt; zj`
+	`nnoremap &lt;S-tab&gt; zk`
+####% 5 set default tabstop
+You will need default value for this when file is empty
+here is how its done for setting it to 2.
+	`tabstop=2`
 
-# Disabling features
+#### Disabling features
 You can choose to disable some settings by giving 0 to corresponding variables(in your vimrc).
 
 disables whole plugin(still being installed.)  

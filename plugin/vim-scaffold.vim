@@ -59,7 +59,7 @@ if !exists("g:scaffold_autofoldcol_enable") |  let g:scaffold_autofoldcol_enable
 au VimEnter * call General#GeneralSettings#Init()
 
 "autoindent
-au BufCreate * call Indent#AutoIndentCount#Init()
+au BufEnter * call Indent#AutoIndentCount#Init()
 
 "auto highlight
 au BufCreate * call Highlight#AutoHighlight#Init()

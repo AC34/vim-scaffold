@@ -21,17 +21,19 @@ function! Indent#AutoIndentCount#Init()
   call s:Debug("ret lines=".len(l:lines))
   "detect and decide indent unit
   call s:DetectIndentUnit(l:lines)
-  
+  "debug
+  call s:Debug("highest spc score before updating=".s:highest_spc_score)  
   "only update settings when spaces are counted
   "tabs don't need changes
-  if s:hightest_spc_score !=# 0
-    call s:Debug("updating settings by:".s:hightest_spc_score)
+  if s:highest_spc_score > 0
     set shiftwidth=0 "with 0 follows tabstop
     set softtabstop=-1 "follows shiftwidth
     set smarttab "tab by shiftwidth at the beginning of the line
     "update tabstop
-    execute "set tabstop=".s:hightest_spc_score
-
+    execute "set tabstop=".s:highest_spc_score
+    call s:Debug("tabstop updated")
+  else
+    call s:Debug("tabstop not updated.")
   endif
 
   let g:scaffold_autoindent_executed = 1
@@ -83,7 +85,7 @@ function! s:DetectIndentUnit(lines)
   let s:spclines = 0 
   let s:tablines = 0
   let s:detected = ""
-  let s:hightest_spc_score = 0
+  let s:highest_spc_score = 0
  
   call s:CollectCharacteristics(a:lines)
 
@@ -93,10 +95,10 @@ function! s:DetectIndentUnit(lines)
     let s:detected = "  "
   endif
 
-  if s:hightest_spc_score ==# 0 
-    "s:hightest_spc_score can still be zero(e.g. no indent text)
-    "in that case, detected character should be updated with default  
-    let s:detected = s:createSpaces(s:hightest_spc_score)
+  if s:highest_spc_score > 0 
+    "s:highest_spc_score can still be zero(e.g. no indent text)
+    "in that case, doing nothing  
+    let s:detected = s:createSpaces(s:highest_spc_score)
   endif
 
 endfunction
@@ -134,11 +136,14 @@ function! s:CollectCharacteristics(lines)
   for l:key in keys(s:occurances)
       call s:Debug("occurances[".l:key."] =".s:occurances[l:key])
   endfor
+  "update highest spc score
+  call s:DetectSpacesUnit(a:lines)
+
 endfunction "CollectCharacteristics
 
 "using s:occurances and other variables to detect 
 "lines should only give meaningful(no empty) lines
-"updates s:hightest_spc_score
+"updates s:highest_spc_score
 function! s:DetectSpacesUnit(lines)
   call s:Debug("DetectSpacesUnit:")   
   
@@ -174,13 +179,13 @@ function! s:DetectSpacesUnit(lines)
     call s:Debug("score[".l:key."] = ".l:scores[l:key])
   endfor 
 
-  "update the s:hightest_spc_score
+  "update the s:highest_spc_score
   "remember the highest scores can be zero
   let l:max_key = -1
   let l:max = max(l:scores)
   for l:key in keys(l:scores)
     if l:scores[l:key] ==# l:max
-      let s:hightest_spc_score = l:key
+      let s:highest_spc_score = l:key
       break
     endif
   endfor
