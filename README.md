@@ -66,12 +66,13 @@ disables autoindent functionality
 	let g:scaffold_autoindent_enable = 0
 
 sets max line numbers to use for analyzing indentation(to 500 lines in example below)  
+'''
 	let g:scaffold_autoindent_maxcount = 500
 
 disables auto highlight  
 	let g:scaffold_autohi_enable = 0
 
-disables highlight by <Leader>h  
+disables highlight by &lt;Leader&gt;h  
 	let g:scaffold_leaderhighlight_enable = 1
 	
 
