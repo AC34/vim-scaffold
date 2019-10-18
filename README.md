@@ -32,7 +32,7 @@ Currently implemented functionalities and settings are as follows:
   * Automatic highglight of some trivial files when they open
   * Automatic Folding
 * Settings(enabled)(only if supported)
-  * Incremental Search
+  * Incremental search
   * Highlight search
   * Text Wrapping
   * no swap file
