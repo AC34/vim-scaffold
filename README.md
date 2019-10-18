@@ -33,7 +33,7 @@ Currently implemented functionalities and settings are as follows:
 - Functionalities
   - automatic indentation detection
   - automatic highglight of some trivial files when they open
-    - key mapping of <Leader>h for highlihgt search
+    - key mapping of &lt;Leader&gt;h for highlihgt search
   - automatic folding level setting
 
 - Settings(enabled)(only if supported)
@@ -55,20 +55,22 @@ Installation
 An example: add the line below to your .vimrc file when you're using vim-plug(for other plugins, follow your plugin's tutorial).
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
-	Plug 'AC34/vim-scaffold'
-
+	`Plug 'AC34/vim-scaffold'`
 then do :PlugInstall
 
 Configuration
 ---------------------------------------------
-#Settings that go well with this plugin
+# Settings that go well with this plugin
 There are some settings that go well with this plugin.
-#####1 setting highlight colors
+##### 1 Setting highlight colors
   `au BufEnter * execute "hi search ctermfg=179 ctermbg=NONE"
     \|  execute "hi Folded ctermfg=179 ctermbg=Black"`
+##### 2 You might want to set Leader key
+For toggling highlight on search by &lt;Leader&gt;
+##### 3 Install syntax plugins
+Syntax rules are needed for auto folding.
 
-
-#Disabling features
+# Disabling features
 You can choose to disable some settings by giving 0 to corresponding variables(in your vimrc).
 
 disables whole plugin(still being installed.)  
@@ -96,3 +98,4 @@ URL:https://github.com/AC34
 License
 ---------------------------------------------
 read LICENSE file.
+
