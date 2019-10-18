@@ -23,13 +23,13 @@ URL:https://github.com/AC34/vim-scaffold
 
 Introduction
 ---------------------------------------------
-This is an extraction of common settings and trivial functionalities from my .vimrc file into one plugin.  
+This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
 By using this plugin, you'll benefit from shortening your .vimrc file, or and you 'll be given some trivial functionalities.  
 Currently implemented functionalities and settings are as follows:
 
 **** Functionalities
   * Automatic indentation detection
-  * Automatic highglight of some trivial files(for jumping by n)
+  * Automatic highglight of some trivial files when they open
   * Automatic Folding
 * Settings(enabled)(only if supported)
   * Incremental Search
