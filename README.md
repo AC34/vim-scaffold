@@ -23,9 +23,9 @@ URL:https://github.com/AC34/vim-scaffold
 
 Introduction
 ---------------------------------------------
-This is an extraction of common settings and trivial functionalities from my .vimrc file into one plugin. By using this plugin, you'll benefit from shortening your .vimrc file, or and you 'll be given some trivial functionalities.
-
-Currently implemented functionalities and settings are as follows:
+This is an extraction of common settings and trivial functionalities from my .vimrc file into one plugin.  
+By using this plugin, you'll benefit from shortening your .vimrc file, or and you 'll be given some trivial functionalities.  
+Currently implemented functionalities and settings are as follows:  
 ****Functionallities
   *one
   *two
