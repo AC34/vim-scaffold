@@ -29,6 +29,7 @@ Currently implemented functionalities and settings are as follows:
 - Functionalities
   - automatic indentation detection
   - automatic highglight of some trivial files when they open
+    - key mapping of <Leader>h for highlihgt search
   - automatic folding level setting
 
 - Settings(enabled)(only if supported)
@@ -70,7 +71,9 @@ sets max line numbers to use for analyzing indentation(to 500 lines in example b
 disables auto highlight  
 	let g:scaffold_autohi_enable = 0
 
-disables auto highlight  
+disables highlight by <Leader>h  
+	let g:scaffold_leaderhighlight_enable = 1
+	
 
 let g:scaffold_leaderhighlight_enable = 0
 
