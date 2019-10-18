@@ -21,6 +21,10 @@ URL:https://github.com/AC34/vim-scaffold
 </pre>
 =============================================
 
+Prerequisites
+---------------------------------------------
+You need to have "autocmd" compiled with your vim.
+
 Introduction
 ---------------------------------------------
 This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
@@ -57,6 +61,14 @@ then do :PlugInstall
 
 Configuration
 ---------------------------------------------
+#Settings that go well with this plugin
+There are some settings that go well with this plugin.
+#####1 setting highlight colors
+  `au BufEnter * execute "hi search ctermfg=179 ctermbg=NONE"
+    \|  execute "hi Folded ctermfg=179 ctermbg=Black"`
+
+
+#Disabling features
 You can choose to disable some settings by giving 0 to corresponding variables(in your vimrc).
 
 disables whole plugin(still being installed.)  
