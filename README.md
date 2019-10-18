@@ -27,7 +27,7 @@ Prerequisites
 
 Introduction
 ---------------------------------------------
-This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
+<p>This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
 By using this plugin, you'll benefit from shortening your .vimrc file and/or you 'll be given some trivial functionalities.  
 Currently implemented functionalities and settings are as follows:  
 - Functionalities
@@ -53,7 +53,7 @@ Currently implemented functionalities and settings are as follows:
   - mouse
   - clipboard
   - foldmethod set to syntax
-
+</p>
 Installation
 ---------------------------------------------
 An example: add the line below to your .vimrc file when you're using vim-plug(for other plugins, follow your plugin's tutorial).
