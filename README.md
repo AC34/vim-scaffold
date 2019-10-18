@@ -23,11 +23,13 @@ URL:https://github.com/AC34/vim-scaffold
 
 Prerequisites
 ---------------------------------------------
+
   You need to at least have "autocmd" compiled with your vim.
 
 Introduction
 ---------------------------------------------
-<p>This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
+
+This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
 By using this plugin, you'll benefit from shortening your .vimrc file and/or you 'll be given some trivial functionalities.  
 Currently implemented functionalities and settings are as follows:  
 - Functionalities
@@ -53,9 +55,10 @@ Currently implemented functionalities and settings are as follows:
   - mouse
   - clipboard
   - foldmethod set to syntax
-</p>
+
 Installation
 ---------------------------------------------
+
 An example: add the line below to your .vimrc file when you're using vim-plug(for other plugins, follow your plugin's tutorial).
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
@@ -107,14 +110,17 @@ disables auto foldlevel(columns) settings
 
 Author
 ---------------------------------------------
+
 URL:https://github.com/AC34
 
 License
 ---------------------------------------------
+
 read LICENSE file.
 
 Notes
 ---------------------------------------------
+
 This plugin is developed on vim-gtk(debian).
 might not work well with other kind of vims.
 
