@@ -27,32 +27,32 @@ Prerequisites
 
 Introduction
 ---------------------------------------------
-	This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
-	By using this plugin, you'll benefit from shortening your .vimrc file and/or you 'll be given some trivial functionalities.  
-	Currently implemented functionalities and settings are as follows:  
-	- Functionalities
-	  - searching
-	    - automatic indentation detection
-	    - automatic highglight of some trivial files when they open
-	    - key mapping of &lt;Leader&gt;h for highlihgt search
-	  - folding
-	    - automatic folding level(columns) adjustment
-		- indenting
-		  - automatic tabstop update
-	
-	- Settings(enabled)(only if supported)
-	  - incremental search
-	  - highlight search
-	  - text wrapping
-	  - no swap file
-	  - utf-8 compatibility
-	  - undolevels set to 500
-	  - history list set to 500
-	  - show line number column
-	  - 256 colors enabled
-	  - mouse
-	  - clipboard
-	  - foldmethod set to syntax
+&nbsp;This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
+&nbsp;By using this plugin, you'll benefit from shortening your .vimrc file and/or you 'll be given some trivial functionalities.  
+&nbsp;Currently implemented functionalities and settings are as follows:  
+&nbsp;- Functionalities
+&nbsp;  - searching
+&nbsp;    - automatic indentation detection
+&nbsp;    - automatic highglight of some trivial files when they open
+&nbsp;    - key mapping of &lt;Leader&gt;h for highlihgt search
+&nbsp;  - folding
+&nbsp;    - automatic folding level(columns) adjustment
+&nbsp;	- indenting
+&nbsp;	  - automatic tabstop update
+&nbsp;
+&nbsp;- Settings(enabled)(only if supported)
+&nbsp;  - incremental search
+&nbsp;  - highlight search
+&nbsp;  - text wrapping
+&nbsp;  - no swap file
+&nbsp;  - utf-8 compatibility
+&nbsp;  - undolevels set to 500
+&nbsp;  - history list set to 500
+&nbsp;  - show line number column
+&nbsp;  - 256 colors enabled
+&nbsp;  - mouse
+&nbsp;  - clipboard
+&nbsp;  - foldmethod set to syntax
 
 Installation
 ---------------------------------------------
