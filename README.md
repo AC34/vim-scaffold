@@ -31,7 +31,7 @@ Currently implemented functionalities and settings are as follows:
   - automatic highglight of some trivial files when they open
   - automatic folding
 
-- settings(enabled)(only if supported)
+- Settings(enabled)(only if supported)
   - incremental search
   - highlight search
   - text wrapping
