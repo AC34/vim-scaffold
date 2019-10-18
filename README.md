@@ -26,15 +26,15 @@ Introduction
 This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
 By using this plugin, you'll benefit from shortening your .vimrc file, or and you 'll be given some trivial functionalities.  
 Currently implemented functionalities and settings are as follows:  
--*** Functionalities
-  - Automatic indentation detection
-  - Automatic highglight of some trivial files when they open
-  - Automatic Folding
+- Functionalities
+  - automatic indentation detection
+  - automatic highglight of some trivial files when they open
+  - automatic folding
 
-- Settings(enabled)(only if supported)
-  - Incremental search
-  - Highlight search
-  - Text Wrapping
+- settings(enabled)(only if supported)
+  - incremental search
+  - highlight search
+  - text wrapping
   - no swap file
   - utf-8 compatibility
   - undolevels set to 500
