@@ -26,7 +26,7 @@ Introduction
 This is an extraction of common settings and trivial functionalities from my .vimrc file into one plugin.  
 By using this plugin, you'll benefit from shortening your .vimrc file, or and you 'll be given some trivial functionalities.  
 Currently implemented functionalities and settings are as follows:  
-* ***Functionallities
+* ***Functionalities
   * one
   * two
 * Settings
@@ -39,6 +39,9 @@ For example: add the line below to your .vimrc file when you're using vim-plug(f
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
 	Plug 'AC34/vim-scaffold'
+
+Configuration
+---------------------------------------------
 
 Author
 ---------------------------------------------
