@@ -60,10 +60,10 @@ Configuration
 You can choose to disable some settings by giving 0 to corresponding variables(in your vimrc).
 
 disables whole plugin(still being installed.)  
-	'let g:scaffold_mode = 0'
+	`let g:scaffold_mode = 0`
 
 disables autoindent functionality  
-	'let g:scaffold_autoindent_enable = 0'
+	`let g:scaffold_autoindent_enable = 0`
 
 sets max line numbers to use for analyzing indentation(to 500 lines in example below)  
 	`let g:scaffold_autoindent_maxcount = 500`
