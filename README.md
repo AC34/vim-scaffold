@@ -13,22 +13,26 @@
                                              
                                              
 </pre>
- .
+ .  
  Since 2019/10/18  
- Written by AC34   
- URL:https://github.com/AC34/vim-scaffold  
+ Written by AC34
+ URL:https://github.com/AC34/vim-scaffold
 =============================================
 
 Introduction
 ---------------------------------------------
+URL:https://github.com/AC34/vim-scaffold
 
 
 Installation
 ---------------------------------------------
+add below line to your .vimrc file(vim-plug).
 
 
 Author
 ---------------------------------------------
+URL:https://github.com/AC34
 
 License
 ---------------------------------------------
+read LICENSE file.
