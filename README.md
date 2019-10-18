@@ -27,23 +27,23 @@ This is extractions of common settings and trivial functionalities from my .vimr
 By using this plugin, you'll benefit from shortening your .vimrc file, or and you 'll be given some trivial functionalities.  
 Currently implemented functionalities and settings are as follows:
 
-**** Functionalities
-  * Automatic indentation detection
-  * Automatic highglight of some trivial files when they open
-  * Automatic Folding
-* Settings(enabled)(only if supported)
-  * Incremental search
-  * Highlight search
-  * Text Wrapping
-  * no swap file
-  * utf-8 compatibility
-  * undolevels set to 500
-  * history list set to 500
-  * show line number column
-  * 256 colors enabled
-  * mouse
-  * clipboard
-  * foldmethod set to syntax
+-*** Functionalities
+  - Automatic indentation detection
+  - Automatic highglight of some trivial files when they open
+  - Automatic Folding
+- Settings(enabled)(only if supported)
+  - Incremental search
+  - Highlight search
+  - Text Wrapping
+  - no swap file
+  - utf-8 compatibility
+  - undolevels set to 500
+  - history list set to 500
+  - show line number column
+  - 256 colors enabled
+  - mouse
+  - clipboard
+  - foldmethod set to syntax
 
 Installation
 ---------------------------------------------
