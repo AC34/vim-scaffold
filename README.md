@@ -23,7 +23,7 @@ URL:https://github.com/AC34/vim-scaffold
 
 Prerequisites
 ---------------------------------------------
-You need to have "autocmd" compiled with your vim.
+You need to at least have "autocmd" compiled with your vim.
 
 Introduction
 ---------------------------------------------
@@ -60,7 +60,7 @@ then do :PlugInstall
 
 Configuration
 ---------------------------------------------
-# Settings that go well with this plugin
+#### Settings that go well with this plugin
 There are some settings that go well with this plugin.
 ##### 1 Setting highlight colors
   `au BufEnter * execute "hi search ctermfg=179 ctermbg=NONE"
