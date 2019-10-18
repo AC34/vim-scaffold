@@ -56,7 +56,7 @@ An example: add the line below to your .vimrc file when you're using vim-plug(fo
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
 	`Plug 'AC34/vim-scaffold'`
-then do :PlugInstall
+then do `:PlugInstall`
 
 Configuration
 ---------------------------------------------
