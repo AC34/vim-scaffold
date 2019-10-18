@@ -23,7 +23,7 @@ URL:https://github.com/AC34/vim-scaffold
 
 Prerequisites
 ---------------------------------------------
-You need to at least have "autocmd" compiled with your vim.
+  You need to at least have "autocmd" compiled with your vim.
 
 Introduction
 ---------------------------------------------
