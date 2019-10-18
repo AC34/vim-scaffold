@@ -31,6 +31,7 @@ Currently implemented functionalities and settings are as follows:
   - Automatic indentation detection
   - Automatic highglight of some trivial files when they open
   - Automatic Folding
+
 - Settings(enabled)(only if supported)
   - Incremental search
   - Highlight search
