@@ -58,7 +58,7 @@ Configuration
 ---------------------------------------------
 You can choose to disable some settings by giving 0 to corresponding variables(in your vimrc).
 
-disables whole plugin(still being installed.)  
+######disables whole plugin(still being installed.)  
 	let g:scaffold_mode = 0
 
 disables autoindent functionality  
