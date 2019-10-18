@@ -12,22 +12,24 @@
   |___/ \___|\__,_||_|  |_|  \___/ |_| \__,_|
                                              
                                              
+.
 </pre>
- .  
- Since 2019/10/18  
- Written by AC34
- URL:https://github.com/AC34/vim-scaffold
+<pre> 
+Since 2019/10/18
+Written by AC34
+URL:https://github.com/AC34/vim-scaffold
+</pre>
 =============================================
 
 Introduction
 ---------------------------------------------
-URL:https://github.com/AC34/vim-scaffold
 
 
 Installation
 ---------------------------------------------
-add below line to your .vimrc file(vim-plug).
+add below line to your .vimrc file when you're using vim-plug(for other plugins, try it youserlf.).
 
+Plug 'AC34/vim-scaffold'
 
 Author
 ---------------------------------------------
