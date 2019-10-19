@@ -62,7 +62,7 @@ Installation
 An example: add the line below to your .vimrc file when you're using vim-plug(for other plugins, follow your plugin's tutorial).
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
-`Plug 'AC34/vim-scaffold\`
+`Plug 'AC34/vim-scaffold`  
 then do `:PlugInstall`
 
 Configuration
