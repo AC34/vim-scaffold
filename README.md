@@ -102,7 +102,7 @@ disables auto highlight
 disables highlight by &lt;Leader&gt;h  
 	`let g:scaffold_leaderhighlight_enable = 0`
 
-disables auto foldlevel(columns) settings
+disables auto foldlevel(columns) settings  
 	`let g:scaffold_autofoldcol_enable = 0`
 
 #### Other Settings
