@@ -79,12 +79,12 @@ For toggling highlight on search by &lt;Leader&gt;
 ##### 3 Install syntax plugins
 Syntax rules are needed for folding.
 ##### 4 Keymaps for jumping between folded lines
-Tabs can be convenient:
-	`nnoremap &lt;Tab&gt; zj`
-	`nnoremap &lt;S-tab&gt; zk`
+Tabs can be convenient:  
+	`nnoremap &lt;Tab&gt; zj`  
+	`nnoremap &lt;S-tab&gt; zk`  
 ####% 5 set default tabstop
 You will need default value for this when file is empty
-here is how its done for setting it to 2.
+here is how its done for setting it to 2.  
 	`tabstop=2`
 
 #### Disabling features
