@@ -82,7 +82,7 @@ Syntax rules are needed for folding.
 Tabs can be convenient:  
 	`nnoremap &lt;Tab&gt; zj`  
 	`nnoremap &lt;S-tab&gt; zk`  
-####% 5 set default tabstop
+##### 5 set default tabstop
 You will need default value for this when file is empty
 here is how its done for setting it to 2.  
 	`tabstop=2`
