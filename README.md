@@ -63,7 +63,8 @@ An example: add the line below to your .vimrc file when you're using vim-plug(fo
 
 #### [vim-plug](https://github.com/junegunn/vim-plug)
 `Plug 'AC34/vim-scaffold`  
-then do `:PlugInstall`
+then do  
+`:PlugInstall`
 
 Configuration
 ---------------------------------------------
@@ -96,9 +97,6 @@ disables whole plugin(still being installed.)
 disables autoindent functionality  
 	`let g:scaffold_autoindent_enable = 0`
 
-sets max line numbers to use for analyzing indentation(to 500 lines in example below)  
-	`let g:scaffold_autoindent_maxcount = 500`
-
 disables auto highlight  
 	`let g:scaffold_autohi_enable = 0`
 
@@ -107,6 +105,10 @@ disables highlight by &lt;Leader&gt;h
 
 disables auto foldlevel(columns) settings
 	`let g:scaffold_autofoldcol_enable = 0`
+
+#### Other Settings
+sets max line numbers to use for analyzing indentation(to 500 lines in example below)  
+	`let g:scaffold_autoindent_maxcount = 500`
 
 Author
 ---------------------------------------------
