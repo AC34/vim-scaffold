@@ -34,12 +34,11 @@ By using this plugin, you'll benefit from shortening your .vimrc file and/or you
 Currently implemented functionalities and settings are as follows:  
 - Functionalities
   - searching
-    - automatic indentation detection
     - automatic highglight of some trivial files when they open
     - key mapping of &lt;Leader&gt;h for highlihgt search
   - folding
     - automatic folding level(columns) adjustment
-	- indenting
+  - indenting
 	  - automatic tabstop update
 
 - Settings(enabled)(only if supported)
