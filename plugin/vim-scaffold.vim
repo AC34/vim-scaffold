@@ -62,8 +62,8 @@ au VimEnter * call General#GeneralSettings#Init()
 au BufEnter * call Indent#AutoIndentCount#Init()
 
 "auto highlight
-au BufCreate * call Highlight#AutoHighlight#Init()
-au BufCreate * call Highlight#HighlightMap#LeaderHighlight()
+au BufEnter * call Highlight#AutoHighlight#Init()
+au BufEnter * call Highlight#HighlightMap#LeaderHighlight()
 
 au BufEnter * call Fold#AutoColumn#Init()
 

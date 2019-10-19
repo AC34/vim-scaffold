@@ -1,8 +1,8 @@
+"bashrc
 
-".vim file
 
 function! Highlight#Parser#ParseBashrc#Parse()
-
- call Highlight#Parser#ParseSh#Parse()  
-  
+	"delegation to bash
+	call Highlight#Parser#ParseSh#Parse()
 endfunction
+
