@@ -80,8 +80,8 @@ For toggling highlight on search by &lt;Leader&gt;h
 Syntax rules are needed for folding.
 ##### 4 Keymaps for jumping between folded lines
 Tabs can be convenient:  
-	`nnoremap &lt;Tab&gt; zj`  
-	`nnoremap &lt;S-tab&gt; zk`  
+	`nnoremap <Tab> zj`  
+	`nnoremap <S-tab> zk`  
 ##### 5 set default tabstop
 You will need default value for this when file is empty
 here is how its done for setting it to 2.  
