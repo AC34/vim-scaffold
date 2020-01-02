@@ -18,9 +18,11 @@
 [![Author](https://img.shields.io/badge/Author-AC34-green?color=10B07A)](https://github.com/AC34/)
 ---
 ### Prerequisites
+System:
+  - ![requres vim8.1](https://img.shields.io/badge/Requirement-Vim%208.1%20or%20above-black)
 
-![requres vim8.1](https://img.shields.io/badge/Requirement-Vim%208.1%20or%20above-black)
-![requires autocmd](https://img.shields.io/badge/Vim%20Requirement-autocmd-black)
+Vim:
+  - ![requires autocmd](https://img.shields.io/badge/Vim%20Requirement-autocmd-black)
 
 Introduction
 ---------------------------------------------
