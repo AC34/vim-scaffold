@@ -15,11 +15,11 @@
  
 <pre>
 Written by AC34
-URL:https://github.com/AC34/vim-scaffold
 </pre>
 
 [![LICENSE](https://img.shields.io/github/license/AC34/vim-scaffold?color=10B07A)](https://github.com/AC34/vim-scaffold/blob/master/LICENSE)
 ![SINCE](https://img.shields.io/badge/since-2019%2F10%2F19-green?color=10B07A)
+[![Author](https://img.shields.io/badge/Author-AC34-green?color=10B07A)](https://github.com/AC34/)
 ---
 ### Prerequisites
 
