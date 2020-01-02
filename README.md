@@ -40,6 +40,9 @@ Currently implemented functionalities and settings are as follows:
 	  - automatic tabstop update
 
 - Settings(enabled)(only if supported)
+
+  look at sample vimrc file for more detail 
+[![sample vimrc](https://img.shields.io/badge/Sample-.vimrc-10B07A)](https://github.com/AC34/vim-scaffold/blob/master/samples/.vimrc)
   - incremental search
   - highlight search
   - text wrapping
@@ -52,6 +55,7 @@ Currently implemented functionalities and settings are as follows:
   - mouse
   - clipboard
   - foldmethod set to syntax
+
 
 ### Installation
 ---
