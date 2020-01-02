@@ -17,7 +17,7 @@
 ![SINCE](https://img.shields.io/badge/since-2019%2F10%2F19-green?color=10B07A)
 [![Author](https://img.shields.io/badge/Author-AC34-green?color=10B07A)](https://github.com/AC34/)
 ---
-### Prerequisites
+### Requirements
 System:
   - ![requres vim8.1](https://img.shields.io/badge/Requirement-Vim%208.1%20or%20above-black)
 
