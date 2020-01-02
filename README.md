@@ -18,6 +18,8 @@ Written by AC34
 URL:https://github.com/AC34/vim-scaffold
 </pre>
 
+![LICENSE](https://img.shields.io/github/license/AC34/vim-scaffold?color=10B07A)
+
 ---
 ### Prerequisites
 
