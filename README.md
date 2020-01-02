@@ -19,7 +19,8 @@
 ---
 ### Prerequisites
 
-  You need to at least have "autocmd" compiled with your vim.
+![requres vim8.1](https://img.shields.io/badge/Requirement-Vim%208.1%20or%20above-black)
+![requires autocmd](https://img.shields.io/badge/Vim%20Requirement-autocmd-black)
 
 Introduction
 ---------------------------------------------
