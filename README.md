@@ -19,8 +19,7 @@ URL:https://github.com/AC34/vim-scaffold
 </pre>
 
 ---
-Prerequisites
----------------------------------------------
+### Prerequisites
 
   You need to at least have "autocmd" compiled with your vim.
 
@@ -53,8 +52,8 @@ Currently implemented functionalities and settings are as follows:
   - clipboard
   - foldmethod set to syntax
 
-Installation
----------------------------------------------
+### Installation
+---
 
 An example: add the line below to your .vimrc file when you're using vim-plug(for other plugins, follow your plugin's tutorial).
 
@@ -63,8 +62,8 @@ An example: add the line below to your .vimrc file when you're using vim-plug(fo
 then do  
 `:PlugInstall`
 
-Configuration
----------------------------------------------
+### Configuration
+
 #### Settings that go well with this plugin
 There are some settings that go well with this plugin.
 ##### 1 Setting highlight colors
@@ -107,18 +106,16 @@ disables auto foldlevel(columns) settings
 sets max line numbers to use for analyzing indentation(to 500 lines in example below)  
 	`let g:scaffold_autoindent_maxcount = 500`
 
-Author
----------------------------------------------
+### Author
 
 URL:https://github.com/AC34
 
-License
----------------------------------------------
+### License
 
 read LICENSE file.
+---
 
-Notes
----------------------------------------------
+### Notes
 
 This plugin is developed on vim-gtk(debian).
 might not work well with other kind of vims.
