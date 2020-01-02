@@ -19,7 +19,6 @@ URL:https://github.com/AC34/vim-scaffold
 </pre>
 
 ![LICENSE](https://img.shields.io/github/license/AC34/vim-scaffold?color=10B07A)
-
 ---
 ### Prerequisites
 
@@ -111,11 +110,6 @@ sets max line numbers to use for analyzing indentation(to 500 lines in example b
 ### Author
 
 URL:https://github.com/AC34
-
-### License
-
-read LICENSE file.
----
 
 ### Notes
 
