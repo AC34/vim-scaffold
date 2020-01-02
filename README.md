@@ -1,4 +1,3 @@
- Gday mate, this is 
  <pre>         _                                  
          (_)                                 
   __   __ _  _ __ ___  ______                
@@ -13,7 +12,6 @@
                                              
                                              
 </pre>
-.
  
 <pre>Since 2019/10/19
 Written by AC34
