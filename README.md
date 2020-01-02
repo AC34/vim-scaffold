@@ -17,8 +17,8 @@
 Written by AC34
 URL:https://github.com/AC34/vim-scaffold
 </pre>
-=============================================
 
+---
 Prerequisites
 ---------------------------------------------
 
