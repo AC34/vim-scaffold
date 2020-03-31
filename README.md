@@ -26,9 +26,8 @@ Vim:
 
 Introduction
 ---------------------------------------------
-
-This is extractions of common settings and trivial functionalities from my .vimrc file into one plugin.  
-By using this plugin, you'll benefit from shortening your .vimrc file and/or you 'll be given some trivial functionalities.  
+Moderniize your vim with modern settings and additional functionalities with this plugin.
+By using this plugin, you'll benefit from shortening your .vimrc file and you be given some additinal functionalities.  
 Currently implemented functionalities and settings are as follows:  
 - Functionalities
   - searching
