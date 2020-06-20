@@ -131,7 +131,12 @@ sets max line numbers to use for analyzing indentation(to 500 lines in example b
 This plugin is developed on vim-gtk(debian).
 might not work well with other kind of vims.
 
-### changes
+### Background
+People write the same settings over and over again in their .vimrcs.
+Plus there can be many functionalities that could be added upon a pure vim installation as "default".
+This plugin is my attempt to delegate those common settings,functionalitiles and keybindings from my .vimrc to a plugin, to base any other plugins upon.
+
+### Changes
 2020/06/21
 replaced ":set hls"(enabling search) by &gt;Leader&ht; with ":set hlsearch!(switching highlight on/off)" by &gt;Leader&ht; key.
 
