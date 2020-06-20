@@ -41,7 +41,7 @@ Currently implemented functionalities and settings are as follows:
 	  - automatic tabstop update
 
 - keybindings
-    - &lt;Leader&gt;g switching highlight search on/off with
+    - &lt;Leader&gt;g switching highlight search on/off
 
 - Common settings to get started with(enabled)(only if supported)
   look at sample vimrc file for more detail 
