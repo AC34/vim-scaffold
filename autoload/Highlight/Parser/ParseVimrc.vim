@@ -1,5 +1,6 @@
 
 "vimrc specific
+"same as .vim parser
 
 function! Highlight#Parser#ParseVimrc#Parse()
   "delegating process to .vim parser
