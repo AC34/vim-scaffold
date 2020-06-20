@@ -26,7 +26,7 @@ Vim:
 
 Introduction
 ---------------------------------------------
-Common settings and additional functionalities in one plugin, to get started with vim.
+Common settings, keybindigs and additional functionalities in one plugin, to get started with.
 
 Currently implemented functionalities and settings are as follows:  
 - Functionalities
@@ -35,11 +35,13 @@ Currently implemented functionalities and settings are as follows:
 				(This is to jump through content lines by n and N keys,instead of manually moving by k,l)
 				(e.g. files like .bashrc)
 				(You don't need this when you move with tagbars etc)
-    - switching highlight search on/off with &lt;Leader&gt;g 
   - folding
     - automatic folding level(columns) adjustment
   - indenting
 	  - automatic tabstop update
+
+- keybindings
+    - &lt;Leader&gt;g switching highlight search on/off with  
 
 - Common settings to get started with(enabled)(only if supported)
   look at sample vimrc file for more detail 
