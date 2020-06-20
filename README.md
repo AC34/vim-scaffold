@@ -28,7 +28,7 @@ Introduction
 ---------------------------------------------
 Common settings, keybindigs and additional functionalities in one plugin, to get started with.
 
-Currently implemented functionalities and settings are as follows:  
+Currently implemented functionalities and settings are as follows:
 - Functionalities
   - searching
     - automatic searching of some trivial files when they open
@@ -41,7 +41,7 @@ Currently implemented functionalities and settings are as follows:
 	  - automatic tabstop update
 
 - keybindings
-    - &lt;Leader&gt;g switching highlight search on/off with  
+    - &lt;Leader&gt;g switching highlight search on/off with
 
 - Common settings to get started with(enabled)(only if supported)
   look at sample vimrc file for more detail 
@@ -58,7 +58,6 @@ Currently implemented functionalities and settings are as follows:
   - mouse
   - clipboard
   - foldmethod set to "syntax"
-
 
 ### Installation
 ---
@@ -100,8 +99,16 @@ You will need default value for this when file is empty
 here is how its done for setting it to 2.  
 	`tabstop=2`
 
+#### Disabling keybindings 
+
+You can choose to disable some keybindings by giving 0 to corresponding variables.
+
+disables highlight switch by &lt;Leader&gt;g 
+	`let g:scaffold_leaderhighlight_enable = 0`
+
 #### Disabling Functionalities
-You can choose to disable some settings by giving 0 to corresponding variables(in your vimrc).
+
+You can choose to disable some funcitionalities by giving 0 to corresponding variables.
 
 disables whole plugin(still being installed.)  
 	`let g:scaffold_mode = 0`
@@ -111,9 +118,6 @@ disables autoindent functionality
 
 disables auto highlight  
 	`let g:scaffold_autohi_enable = 0`
-
-disables highlight by &lt;Leader&gt;g 
-	`let g:scaffold_leaderhighlight_enable = 0`
 
 disables auto foldlevel(columns) settings  
 	`let g:scaffold_autofoldcol_enable = 0`
