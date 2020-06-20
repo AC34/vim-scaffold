@@ -76,7 +76,8 @@ For command line vim, example might be as follows:
   `au BufEnter * execute "hi search ctermfg=179 ctermbg=NONE"
     \|  execute "hi Folded ctermfg=179 ctermbg=Black"`
 ##### 2 You might want to set Leader key
-For toggling highlight on search by &lt;Leader&gt;h
+For toggling highlight on search by &lt;Leader&gt;g
+ (this used to be &lt;Leader&gt;h for a while. changed on 2020/06/21)
 ##### 3 Install syntax plugins
 Syntax rules are needed for folding.
 ##### 4 Keymaps for jumping between folded lines
